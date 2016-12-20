@@ -1,0 +1,297 @@
+@import 'colors';
+@import 'syntax-variables';
+
+.comment {
+    color: @syntax-color-comment;
+}
+
+.constant {
+    color: @syntax-color-constant;
+
+    &.character.escape {
+        color: @batman_teal;
+    }
+    // &.numeric {
+    //     color: @syntax-color-value;
+    // }
+    &.other.color {
+        color: @batman_teal;
+    }
+
+    &.other.symbol {
+        color: @batman_leaf;
+    }
+}
+
+.css {
+    &.class {
+        color: @batman_purple;
+    }
+
+    &.pseudo-element {
+        color: @batman_apple;
+    }
+}
+
+.entity {
+    &.name.function {
+        color: @syntax-color-function;
+    }
+
+    &.name.class,
+    &.name.type,
+    &.name.type.class {
+        color: @syntax-color-class;
+    }
+
+    &.name.section {
+        color: @batman_khaki;
+    }
+
+    &.name.tag {
+        color: @batman_scrubs;
+    }
+
+    &.id {
+        color: @batman_emerald;
+    }
+
+    &.inherited-class {
+        color: @puce;
+    }
+}
+
+.html {
+    &.punctuation.definition.tag {
+        color: @batman_scrubs;
+    }
+}
+
+.invalid.illegal {
+    color: @syntax-background-color;
+    background-color: @batman_strawberry;
+}
+
+.keyword {
+    color: @syntax-color-keyword;
+
+    &.control {
+        color: @batman_scrubs;
+    }
+
+    &.operator {
+        color: @syntax-text-color;
+    }
+
+    &.other.special-method {
+        color: @batman_mustard;
+    }
+
+    &.other.unit {
+        color: @batman_mustard;
+    }
+
+    &.control.exception {
+        color: @batman_raspberry;
+    }
+}
+
+.markup {
+    &.bold {
+        font-weight: bold;
+        color: @batman_egg;
+    }
+
+    &.changed {
+        color: @batman_lilac;
+    }
+
+    &.deleted {
+        color: @batman_strawberry;
+    }
+
+    &.italic {
+        font-style: italic;
+        color: @batman_purple;
+    }
+
+    &.heading .punctuation.definition.heading {
+        color: @batman_emerald;
+    }
+
+    &.inserted {
+        color: @batman_leaf;
+    }
+
+    &.list {
+        color: @batman_strawberry;
+    }
+
+    &.quote {
+        color: @batman_egg;
+    }
+
+    &.raw.inline {
+        color: @batman_leaf;
+    }
+}
+
+.meta {
+    &.class {
+        color: @puce;
+    }
+
+    &.link {
+        color: @batman_raspberry;
+    }
+
+    &.require {
+        color: @batman_apple;
+    }
+
+    &.selector {
+        color: @batman_purple;
+    }
+
+    &.separator {
+        color: @syntax-text-color;
+        background-color: @gray_50;
+    }
+
+    &.function-call {
+        color: @puce;
+    }
+}
+
+.none {
+    color: @syntax-text-color;
+}
+
+.punctuation {
+    &.definition {
+        &.comment {
+            color: @syntax-color-comment;
+        }
+
+        &.string {
+            color: @batman_teal;
+        }
+
+        &.array,
+        &.parameters {
+            color: @syntax-text-color;
+        }
+
+        &.variable {
+            color: @syntax-color-variable;
+        }
+
+        &.heading,
+        &.identity {
+            color: @batman_teal;
+        }
+
+        &.bold {
+            font-weight: bold;
+            color: @batman_mustard;
+        }
+
+        &.italic {
+            font-style: italic;
+            color: @batman_purple;
+        }
+
+        &.quasi{
+          color: @batman_teal;
+        }
+    }
+
+    &.section.embedded {
+        color: darken(@batman_strawberry, 10%);
+    }
+}
+
+.source.gfm {
+    .link {
+        color: @batman_teal;
+
+        &.markup {
+            color: @batman_mustard;
+        }
+    }
+
+    .heading {
+        color: @batman_khaki;
+    }
+
+    .markup.code {
+        color: @batman_khaki;
+    }
+}
+
+.storage {
+    color: @batman_purple;
+
+    &.modifier {
+        color: @batman_purple;
+
+        &.extends,
+        &.implements {
+            color: @batman_purple;
+        }
+    }
+}
+
+.string {
+    color: @batman_teal;
+
+    &.js.unquoted {
+        color: @batman_fg;
+    }
+
+    &.regexp {
+        color: @batman_emerald;
+
+        .source.ruby.embedded {
+            color: @undecided;
+        }
+    }
+
+    &.other.link {
+        color: @undecided;
+    }
+}
+
+.support {
+    &.class {
+        color: @puce;
+    }
+
+    &.function {
+        color: @batman_scrubs;
+
+        &.any-method {
+            color: @batman_scrubs;
+        }
+    }
+}
+
+.variable {
+    color: @batman_banana;
+
+    &.interpolation {
+        color: darken(@batman_strawberry, 10%);
+    }
+
+    &.parameter.function {
+        color: @syntax-text-color;
+    }
+
+    &.this{
+      color: #aa759f;
+    }
+}
+
+.line-number {
+    color: @light-gray;
+}

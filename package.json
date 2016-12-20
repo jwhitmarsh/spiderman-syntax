@@ -1,0 +1,23 @@
+{
+  "name": "spiderman-syntax",
+  "theme": "syntax",
+  "version": "1.0.0",
+  "description": "A color scheme that's inspidered than the one inspired by the World's Greatest Detective (but worst superhero)",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwhitmarsh/spiderman-syntax.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/jwhitmarsh/spiderman-syntax/issues"
+  },
+  "homepage": "https://github.com/jwhitmarsh/spiderman-syntax#readme"
+}
