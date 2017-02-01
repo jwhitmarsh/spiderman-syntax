@@ -6,7 +6,7 @@
 }
 
 .constant {
-    color: @syntax-color-constant;
+    color: @syntax-color-constant !important;
 
     &.character.escape {
         color: @batman_teal;
@@ -160,6 +160,16 @@
 
     &.function-call {
         color: @puce;
+
+        .variable {
+            color: @puce;
+        }
+    }
+
+    &.function.parameters {
+        .variable {
+            color: @batman_fg;
+        }
     }
 }
 
@@ -201,13 +211,17 @@
             color: @batman_purple;
         }
 
-        &.quasi{
-          color: @batman_teal;
+        &.quasi {
+            color: @batman_teal;
         }
     }
 
     &.section.embedded {
         color: darken(@batman_strawberry, 10%);
+    }
+
+    &.separator {
+        color: @syntax-text-color;
     }
 }
 
@@ -239,6 +253,10 @@
         &.implements {
             color: @batman_purple;
         }
+    }
+
+    + .variable {
+        color: @batman_mustard;
     }
 }
 
@@ -274,6 +292,10 @@
             color: @batman_scrubs;
         }
     }
+
+    &.type.console {
+        color: @puce;
+    }
 }
 
 .variable {
@@ -284,11 +306,11 @@
     }
 
     &.parameter.function {
-        color: @syntax-text-color;
+        color: @batman_fg;
     }
 
-    &.this{
-      color: #aa759f;
+    &.this {
+        color: #aa759f;
     }
 }
 
